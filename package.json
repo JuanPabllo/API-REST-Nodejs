@@ -5,7 +5,19 @@
   "repository": "https://github.com/JuanPabllo/API-REST-Nodejs.git",
   "author": "Juan Pablo <59495901+JuanPabllo@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/server.js",
+    "test": "jest --env node"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "pg-promise": "^10.9.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
   }
 }
